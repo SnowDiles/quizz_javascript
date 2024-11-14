@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bangers&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+
+}
+
+.navBar {
+  width: 100%;
+  height: 70px;
+  background-color: #2c2929;
+  padding-top: 27px;
+  position: fixed;
+  font-size: 20px;
+  z-index: 1;
+  top :0px;
+}
+
+.navContent .logo {
+  font-size: 30px;
+  padding-right: 30px;
+  padding-left: 20px;
+  position: relative;
+  bottom: 3px;
+  color: orange;
+}
+
+.navContent ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: white;
+}
+
+.navContent li {
+  list-style-type: none;
+}
+
+.navContent a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.navContent a:hover {
+  color: orange;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a::before .logo {
+  display: none;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Landing page */
+
+.landingBox {
+  width: 100%;
+  height: 750px;
+  background-color: #120697;
+  padding-top: 46px;
+  position: relative;
+  top: 0px;
+  padding-top: 100px;
+}
+
+.landingContain {
+  width: 70%;
+  height: 600px;
+  background-color: #0d056b;
+  margin: auto;
+  border-radius: 4rem;
+  -webkit-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.64);
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.64);
+}
+
+.landingContain .textPart {
+  color: white;
+
+  width: 50%;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 20px;
+  position: relative;
+  top: 20%;
+  left: 7%;
+  line-height: 34px;
+}
+.landingContain {
+  display: flex;
+  flex-direction: row;
+}
+
+.landingContain button {
+  background-color: orange;
+  color: white;
+  border-radius: 2px;
+  height: 50px;
+  width: 100px;
+  margin-top: 10px;
+  border: 0.5px solid white;
+  font-size: 20px;
+}
+
+.landingContain p:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.landingContain button:hover {
+  scale: 1.1;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+
+.imgPart {
+  width: 50%;
+  overflow-y: hidden;
+}
+
+.imgPart img {
+  width: 350px;
+  position: relative;
+  top: 20%;
+  left: 20%;
+  transform: skewY(-3deg);
+  border-radius: 2rem;
+  overflow-y: hidden;
+  box-shadow: 5px 5px 15px 5px orange;
+}
+
+.imgPart img:hover {
+  scale: 1.1;
+  transition: all 0.2s ease-in;
+  box-shadow: 3px 3px 12px 3px rgb(255, 60, 0);
+}
+
+/* Citation section */
+
+.citContain {
+  width: 100%;
+  height: 200px;
+  color: orange;
+  font-size: 24px;
+  font-style: italic;
+  padding-left: 10%;
+  padding-top: 60px;
+}
+
+/* presentation section  */
+
+.preContain {
+  width: 100%;
+  height: fit-content;
+  background-color: #120697;
+  color: white;
+}
+
+.txtPreContent {
+  width: 70%;
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 150px;
+  padding-top: 100px;
+  padding-right: 30px;
+}
+
+.preContentTitle {
+  color: orange;
+  padding-bottom: 30px;
+}
+
+.preContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgPreContent {
+  padding-top: 120px;
+}
+
+.imgPreContent2 {
+  padding-top: 170px;
+  margin-left: 200px;
+}
+
+.preContain hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  width: 60%;
+  margin: auto;
+  margin-top: 100px
+}
+
+
+/* section image */
+
+.secImg{
+
+
+  width: fit-content;
+  height: 300px;
+  background-color: #ccc5ee;
+  overflow-x: hidden;
+}
+
+.secImgContent{
+
+  display: flex;
+  flex-direction: row;
+   animation: imgSlide 15s linear infinite;
+  overflow-x: hidden;
+}
+
+.secImgCard{
+
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color:#120697;
+  border-radius: 1rem;
+  box-shadow: 5px 0px 40px -8px rgba(255, 132, 0, 0.54);
+  margin-left: 50px;
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+.secImgCard p{
+
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.secImgCard img{
+
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 17%;
+}
+
+.secImgCard:hover{
+
+
+  color: white;
+  background-color: orange;
+  cursor: pointer;
+}
+
+@keyframes imgSlide{
+
+  0%{
+
+    transform: translateX(-2000px);
+
+  }
+
+
+  100%{
+
+    transform: translateX(2000px);
+
+  }
+  
+
+}
+
+
+/* section footer */
+
+/* Footer Styling */
+.footer {
+  background-color: #333333; 
+  color: #FFFFFF;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-logo, .footer-navigation, .footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  color: #FFD700; 
+  margin-bottom: 10px;
+}
+
+.footer-navigation h3,
+.footer-social h3 {
+  font-size: 18px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.footer-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-navigation ul li {
+  margin-bottom: 8px;
+}
+
+.footer-navigation ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  color: #FFD700; /* Couleur d'accent */
+  background-color: #444;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #FFD700;
+  color: #333;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+

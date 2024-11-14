@@ -1,0 +1,176 @@
+/* Import des Polices */
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bangers&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables de Couleur */
+:root {
+    --primary-color: #1a73e8; /* Bleu vif */
+    --secondary-color: #34a853; /* Vert éclatant */
+    --accent-color: #fbbc05; /* Jaune lumineux */
+    --background-color: #20232a; /* Noir profond */
+    --text-color: #f4f4f9;
+    --highlight-color: #ffffff;
+    --button-hover-color: #1e90ff; /* Bleu clair pour hover */
+}
+
+/* Configuration Globale */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 600px;
+    width: 90%;
+    padding: 2rem;
+    background: #282c34;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* Style du Titre */
+body h1 {
+    font-family: "Bangers", serif;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Bouton Commencer le Quiz */
+#start_quiz {
+    background-color: var(--secondary-color);
+    color: var(--highlight-color);
+    font-family: "Bangers", serif;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(52, 168, 83, 0.4);
+    cursor: pointer;
+}
+
+#start_quiz:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 20px rgba(52, 168, 83, 0.6);
+    background-color: var(--button-hover-color);
+}
+
+/* Section de la Question */
+#question {
+    background: linear-gradient(145deg, #333943, #282c34);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color: orange;
+    
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease;
+    border: 1px solid orange;
+}
+
+/* Bouton "Question Suivante" */
+#next_question button{
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #45f415, #15f4ee);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(21, 244, 238, 0.4);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#next_question {
+
+    background-color: #282c34;
+}
+
+
+
+#next_question  button:hover {
+    background: linear-gradient(135deg, #15f4ee, #45f415);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(69, 244, 21, 0.5);
+}
+
+
+#question:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Section des Réponses */
+main .answer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.answer button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(251, 188, 5, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.answer button:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(52, 168, 83, 0.5);
+}
+
+/* Animation des éléments */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Lien Hover */
+a:hover, .lien a:hover, .navigation a:hover {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #111;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+}

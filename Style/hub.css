@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bangers&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
+}
+
+/* NAV BAR */
+.navBar {
+    width: 100%;
+    height: 70px;
+    background-color: #1d1d1d; /* Couleur foncée */
+    padding-top: 27px;
+    position: fixed;
+    font-size: 20px;
+    z-index: 1;
+    top: 0px;
+}
+
+.navContent .logo {
+    font-size: 30px;
+    padding-right: 30px;
+    padding-left: 20px;
+    position: relative;
+    bottom: 3px;
+    color: #ffcc00; /* Jaune vif */
+}
+
+.navContent ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+}
+
+.navContent li {
+    list-style-type: none;
+}
+
+.navContent a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.navContent a:hover {
+    color: #ffcc00; /* Jaune vif au survol */
+}
+
+/* HUB */
+#hub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Bangers", serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3a3a8f; /* Bleu plus clair */
+}
+
+#choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffcc00; /* Jaune vif */
+    font-size: 70px;
+    position: absolute;
+    width: 750px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: #2a2a70; /* Bleu foncé */
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.64);
+    top: 100px;
+}
+
+/* section image */
+.secImg {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 300px;
+    background-color: #3a3a8f; /* Fond clair */
+}
+
+.secImgContent {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.secImgCard {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    color: #1d1d1d; /* Texte foncé */
+    border-radius: 1rem;
+    box-shadow: 5px 0px 40px -8px rgba(255, 132, 0, 0.54);
+    scale: 0.8;
+    margin-top: 50px;
+    overflow-x: hidden;
+    padding-left: 12px;
+    text-decoration:none;
+}
+
+.secImgCard p {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.secImgCard img {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 17px;
+}
+
+.secImgCard:hover {
+    color: white;
+    background-color: #ffcc00; /* Jaune vif au survol */
+    cursor: pointer;
+}
+
+/* section footer */
+.footer {
+    background-color: #1d1d1d; 
+    color: #FFFFFF;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-logo, .footer-navigation, .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    color: #ffcc00; 
+    margin-bottom: 10px;
+}
+
+.footer-navigation h3,
+.footer-social h3 {
+    font-size: 18px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.footer-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-navigation ul li {
+    margin-bottom: 8px;
+}
+
+.footer-navigation ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    color: #ffcc00; /* Jaune vif */
+    background-color: #444;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

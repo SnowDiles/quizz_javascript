@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./script/quizz.js" defer></script>
+    <link rel="stylesheet" href="Style/interface.css" />
+    <link rel="stylesheet" href="Style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>INTERFACE</title>
+  </head>
+
+ <!-- Navbar -->
+ <div class="navBar">
+    <div class="navContent">
+      <ul>
+        <a href="index.html">
+          <li class="logo">QuizzMania</li>
+        </a>
+        <a href="hub.html">
+          <li>Quizz</li>
+        </a>
+        <a href="leaderboard.html">
+          <li>Classement</li>
+        </a>
+        <a href="contact.html">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <header>
+      
+    </header>
+    <main>
+      <h1 id="title_quizz" style="color: white;">bienvenue cher joueur </h1>
+      <div class="question">
+        <h2 id="question">êtes-vous prêt à relever le défi ? </h2>
+        <div><p id="timer" style="padding-top: 20px; font-size: larger;"></p></div>
+      </div>
+      <div class="answer" id="answer">
+        <button id="A">oui</button>
+        <button id="B">oui</button>
+        <button id="C">oui</button>
+        <button id="D">oui</button>
+      </div>
+      <div class="start" id="quiz_contain" onclick="quiz()">
+        <button id="start_quiz" >START</button>
+      </div>
+
+      <div class="start">
+        <button id="next_question" onclick="nextQuestion()"></button>
+      </div>
+    </main>
+  </body>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>QUIZZMANIA</h3>
+        <p>
+          La plateforme de quiz qui transforme le savoir en plaisir ! Testez vos
+          connaissances en famille ou en solo, et faites de chaque session un
+          moment unique et interactif.
+        </p>
+      </div>
+
+      <div class="footer-navigation">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="hub.html">Nos Quiz</a></li>
+          <li><a href="leaderboard.html">Classement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bas du footer -->
+    <div class="footer-bottom">
+      <p>
+        © 2024 QuizzMania. Tous droits réservés. -
+        <a href="#">Mentions légales</a> -
+        <a href="#">Politique de confidentialité</a>
+      </p>
+    </div>
+  </footer>
+</html>

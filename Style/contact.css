@@ -1,0 +1,149 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bangers&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Styles de base */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #1c0357, #fb8500); /* Palette de quiz */
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+
+/* Nav Bar */
+.top {
+    display: flex;
+    align-items: center;
+    background-color: #1d2671; /* Couleur harmonisée avec le quiz */
+    padding: 10px 20px;
+    height: 60px;
+    width: 100%;
+}
+
+.logo {
+    color: #fb8500; /* Couleur pour le logo */
+    font-family: "Bangers", sans-serif;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.topnav {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.topnav:hover {
+    color: #fb8500; /* Couleur au survol */
+}
+
+/* Contact Section */
+#box {
+    margin: 4em auto;
+    max-width: 1200px;
+    padding: 1em;
+}
+
+.photobox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+    background-color: #003344; /* Couleur harmonisée */
+}
+
+#brahim, #virgil, #aymeric {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+    align-items: center;
+    margin: 3em 0;
+}
+
+#virgil {
+    grid-template-columns: 2fr 1fr;
+}
+
+.photo {
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    margin-left: 30px;
+    background-position: center;
+}
+
+/* Assurez-vous que le chemin d'image est correct */
+#brahim .photo {
+    background-image: url("../images/IMG_7789.jpg");
+    background-position-y: top;
+    background-size: cover;
+}
+
+#virgil .photo {
+    background-image: url("../images/e24f8893-39dd-4f30-9ae6-d366fd4aaa95.jpg");
+}
+
+#aymeric .photo {
+    background-image: url("../images/20241028_151350.jpg");
+}
+
+.description {
+    background-color: #02071c; /* Couleur harmonisée */
+    border-radius: 15px;
+    padding: 2em;
+    color: #ffffff;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid orange;
+}
+
+/* Liens */
+.lien a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.lien a:hover {
+    color: #fb8500; /* Couleur au survol */
+}
+
+/* Footer */
+.bottom {
+    background-color: #1d2671; /* Couleur harmonisée */
+    padding: 2em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.bottomtext, .bottomtext2 {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #fb8500; /* Couleur au survol */
+}
